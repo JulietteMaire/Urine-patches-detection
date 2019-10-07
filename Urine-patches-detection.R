@@ -40,10 +40,10 @@ erode_pix <- function(j,x) {
 cover_calcul <- function(j,x) { #j=total surface of the field in m2, x=layer to consider after kmeans and isollation of a patch
   df<-summary(x)   #df[6] #number of Na;s
   tot_pix<-nrow(x)*ncol(x) #number of pixels in the layes
-  tot_cover_pix<-tot_pix-df[6]
-  resolution<-j/tot_pix
-  tot_cover_surf<-tot_cover_pix*resolution #coverage in m2
-  tot_cover_perc<-(tot_cover_surf*100)/j
+  tot_cover_pix<-tot_pix-df[6] # number of pixel detected as part of urine patches
+  resolution<-j/tot_pix #resolution
+  tot_cover_surf<-tot_cover_pix*resolution #coverage of urine patches in m2
+  tot_cover_perc<-(tot_cover_surf*100)/j # percentage of area detected as urine patches
   results<-data.frame(tot_pix,tot_cover_pix,resolution,tot_cover_surf,tot_cover_perc)
   colnames(results)<-c("tot_pix","tot_cover_pix","resolution","tot_cover_surf","tot_cover_perc")
   results
@@ -52,7 +52,7 @@ cover_calcul <- function(j,x) { #j=total surface of the field in m2, x=layer to 
 
 
 ## Read images
-images.path <- "C:/Users/JMaire/Downloads/shapefiles" # add your image to the folder or use the Test_image.tif provided.
+images.path <- "~/Downloads/Urine-patches-detection-master" # add your image to the folder or use the Test_image.tif provided.
 all.images <- list.files(images.path, recursive=TRUE, full.names=TRUE, pattern = ".tif$")
 # 'all.images' lists the different images present in the folder (images.patch) that will be analysed:
 #	Each image is a 15 x 15 m square of grassland
@@ -95,6 +95,10 @@ for(i in 1:length(all.images)){
   plot(kmr, legend=FALSE)
   plot(patch, col="red", legend=FALSE)
   plot(maskpatch_fill, col="red", legend=FALSE) 
+  
+  par(mfrow=c(1,1))
+  plotRGB(z,r=1, g=2, b=3)
+  plot(maskpatch_fill, col="red", legend=FALSE, add=T) 
 
   ##Calculation of the resulting covers areas and compilation in a csv file
   df<-cover_calcul(225,maskpatch_fill)
