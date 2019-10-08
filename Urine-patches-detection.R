@@ -2,8 +2,10 @@
 #####Urine patches detection#####
 #################################
 ## Adaptable R script for urine patch detection
+## Read the README.md file
 
 # Required packages (updates 2017)
+install.packages(c("raster","igraph","SDMTools")
 require("raster")# version 2.6-7, 11/2017 maintainer Robert J. Hijmans, http://www.rspatial.org/
 require("igraph") # clump function
 require("SDMTools") # PatchStat() and ConnLabel
