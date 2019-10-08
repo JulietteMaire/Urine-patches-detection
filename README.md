@@ -11,9 +11,8 @@ For more information on the method read the article mentioned above.
 
 To run the code:
 1) Download the whole folder, open the R script called 'Urine-patches-detection.R'
-2) Install necessary package if not automated
-3) Change the file path of the test.image (line 55)
-4) Select the layer of the image to use (line 72)
-5) If you want to use another image than the test.image. Run Cluster number function to get the optimal cluster number (open R script called 'Cluster_number.R') and change the numbe rof cluster to fit your image (line 79)
-6) Run 'Urine-patches-detection.R'
-7) The results will automatically be plotted in R and the results table save on the working directory
+2) Change the file path of the test.image (line 55)
+3) Select the layer of the image to use (line 72)
+4) If you want to use another image than the test.image. Run Cluster number function to get the optimal cluster number (open R script called 'Cluster_number.R') and change the numbe rof cluster to fit your image (line 79)
+5) Run 'Urine-patches-detection.R'
+6) The results will automatically be plotted in R and the results table save on the working directory
