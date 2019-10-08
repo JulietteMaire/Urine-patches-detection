@@ -7,8 +7,8 @@
 # Required packages (updates 2017)
 install.packages(c("raster","igraph","SDMTools"))
 require("raster")# version 2.6-7, 11/2017 maintainer Robert J. Hijmans, http://www.rspatial.org/
-require("igraph") # clump function
-require("SDMTools") # PatchStat() and ConnLabel
+require("igraph") # for clump()
+require("SDMTools") # for PatchStat() and ConnLabel()
 
 ##################### extra functions
 # Function 'fill.na' fills the holes inside the detected patches
