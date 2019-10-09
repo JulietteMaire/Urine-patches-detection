@@ -1,0 +1,42 @@
+{
+    "contributors": [
+        {
+            "affiliation": "SRUC", 
+            "type": "Supervisor", 
+            "name": "Robert Rees"
+        }
+    ], 
+    "license": "GPL-2.0+", 
+    "title": "JulietteMaire/Urine-patches-detection: Pre-release", 
+    "related_identifiers": [
+
+        {
+            "scheme": "doi", 
+            "identifier": "10.3389/fsufs.2018.00010", 
+            "relation": "isSupplementTo", 
+            "resource_type": "publication-article"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.3477995", 
+            "relation": "isVersionOf"
+        }
+    ], 
+    "version": "1.0.0", 
+    "upload_type": "software", 
+    "keywords": [
+        "K-means", 
+        "NDVI", 
+        "Remote sensing"
+    ], 
+    "publication_date": "2019-10-09", 
+    "creators": [
+        {
+            "orcid": "0000-0002-1794-2358", 
+            "affiliation": "SRUC", 
+            "name": "Juliette Maire"
+        }
+    ], 
+    "access_right": "open", 
+    "description": "<p>Pre-release.</p>"
+}
