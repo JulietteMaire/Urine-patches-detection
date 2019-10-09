@@ -61,8 +61,8 @@ all.images <- list.files(images.path, recursive=TRUE, full.names=TRUE, pattern =
 #	Each image contents a Red, Green, Blue, NIR+Red channel, NIR and DSM (elevation meters from sea level)
 
 ## Kmeans segmentation
-for(i in 1:length(all.images)){
-  z<-brick(all.images[i])
+lapply(all.images, function(file.path){
+  z<-brick(file.path)
   names(z)<-c("red","green","blue","NIR+red","NIR","DSM")
   # Calculation of NDVI layer
   NDVI<-((z$NIR-z$red)/(z$NIR+z$red))
@@ -83,14 +83,14 @@ for(i in 1:length(all.images)){
   # Visual selection of the cluster corresponding to the patches using the function 
   #'calc' {raster}. Essential step to be done for each image. Here value selected is 3.
   patch<-calc(kmr, function(x){x[x!=3]<- NA;return(x)}) 
- 
+  
   ## Refinement
   # Applied 'erode_pix' to remove isolated pixels detected between urine patches
   # Chose 200 pixels  which correspond to approximately 300cm2 if resolution 1.56cm/pixel
   maskpatch<-erode_pix(200, patch)  
   # Applied 'fill.na' to remove gaps inside the urine patches detected
   maskpatch_fill<- focal(maskpatch,w=matrix(1,3,3),fun=fill.na,pad=TRUE,na.rm=FALSE)
-
+  
   ## Visualisation of the results
   par(mfrow=c(1,4))
   plotRGB(z,r=1, g=2, b=3)
@@ -101,9 +101,9 @@ for(i in 1:length(all.images)){
   par(mfrow=c(1,1))
   plotRGB(z,r=1, g=2, b=3)
   plot(maskpatch_fill, col="red", legend=FALSE, add=T) 
-
+  
   ## Calculation of the resulting covers areas and compilation in a csv file
   df<-cover_calcul(225,maskpatch_fill)
   namefile<-paste("coverage_data_300cm",i,".csv") #specific name for each input (image file)
   write.csv(df, namefile)
-}
+})
