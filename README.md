@@ -1,5 +1,4 @@
 # Urine-patches-detection
-https://zenodo.org/badge/DOI/10.5281/zenodo.3477996.svg
 DOI: 10.5281/zenodo.3477996
 
 This project is dedicated to making the code used for the data of this article: Identifying Urine Patches on Intensively Managed Grassland Using Aerial Imagery Captured From Remotely Piloted Aircraft Systems https://www.frontiersin.org/articles/10.3389/fsufs.2018.00010/full available to everyone.
@@ -19,3 +18,5 @@ To run the code:
 4) If you want to use another image than the test.image. Run Cluster number function to get the optimal cluster number (open R script called 'Cluster_number.R') and change the numbe rof cluster to fit your image (line 79)
 5) Run 'Urine-patches-detection.R'
 6) The results will automatically be plotted in R and the results table save on the working directory
+
+Citation: Juliette Maire. (2019, October 9). Identifying Urine Patches on Intensively Managed Grassland Using Aerial Imagery Captured From Remotely Piloted Aircraft - data generation code (Version v1.01). Zenodo. https://doi.org/10.5281/zenodo.3477996
