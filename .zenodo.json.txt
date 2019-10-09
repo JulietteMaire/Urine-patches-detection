@@ -1,4 +1,11 @@
 {
+    "description": "<p>First release.</p>", 
+    "license": "GPL-2.0+", 
+    "title": "JulietteMaire/Urine-patches-detection: First release", 
+    "version": "2.0.0", 
+    "upload_type": "software", 
+    "publication_date": "2019-10-09", 
+    "access_right": "open", 
     "contributors": [
         {
             "affiliation": "SRUC", 
@@ -36,8 +43,6 @@
             "name": "Gary J. Lanigan1"
         }
     ], 
-    "license": "GPL-2.0+", 
-    "title": "JulietteMaire/Urine-patches-detection: Pre-release", 
     "related_identifiers": [
 
         {
@@ -52,14 +57,11 @@
             "relation": "isVersionOf"
         }
     ], 
-    "version": "1.0.0", 
-    "upload_type": "software", 
     "keywords": [
         "K-means", 
         "NDVI", 
         "Remote sensing"
     ], 
-    "publication_date": "2019-10-09", 
     "creators": [
         {
             "orcid": "0000-0002-1794-2358", 
@@ -67,6 +69,4 @@
             "name": "Juliette Maire"
         }
     ], 
-    "access_right": "open", 
-    "description": "<p>Pre-release.</p>"
 }
