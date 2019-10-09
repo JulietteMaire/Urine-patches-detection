@@ -3,7 +3,37 @@
         {
             "affiliation": "SRUC", 
             "type": "Supervisor", 
-            "name": "Robert Rees"
+            "name": "Robert M. Rees"
+        },
+        {
+            "affiliation": "SRUC", 
+            "type": "Researcher", 
+            "name": "Simon Gibson-Poole"
+        },
+        {
+            "affiliation": "CEH", 
+            "type": "Supervisor", 
+            "name": "Ute Skiba"
+        },
+        {
+            "affiliation": "CEH", 
+            "type": "Supervisor", 
+            "name": "Nicholas Cowan"
+        },
+        {
+            "affiliation": "UniversityOfEdinburgh", 
+            "type": "Supervisor", 
+            "name": "Dave S. Reay"
+        },
+        {
+            "affiliation": "Teagasc", 
+            "type": "Supervisor", 
+            "name": "Karl G. Richards1"
+        },
+        {
+            "affiliation": "Teagasc", 
+            "type": "Supervisor", 
+            "name": "Gary J. Lanigan1"
         }
     ], 
     "license": "GPL-2.0+", 
