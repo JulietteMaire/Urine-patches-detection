@@ -1,5 +1,6 @@
 # Urine-patches-detection
-DOI: 10.5281/zenodo.3477996
+
+[![DOI](https://zenodo.org/badge/212298451.svg)](https://zenodo.org/badge/latestdoi/212298451)
 
 This project is dedicated to making the code used for the data of this article: Identifying Urine Patches on Intensively Managed Grassland Using Aerial Imagery Captured From Remotely Piloted Aircraft Systems https://www.frontiersin.org/articles/10.3389/fsufs.2018.00010/full available to everyone.
 
