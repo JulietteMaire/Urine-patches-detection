@@ -7,8 +7,8 @@ This project is dedicated to code and data of the article: Identifying Urine Pat
 Juliette Maire led the project as part of her Ph.D. to investigate the possibility and efficiency of detecting urine patches from images captured using Remotely Piloted Aircraft System (RPAS). 
 A urine patch is a visual delimitation between the grass that responded to an input of urine and the rest of the field. 
 The urine patch includes two elements: 
-* 1) the wetted area where the urine was applied 
-* 2) the effective area which combines the wetted area and where the grass has had access to the urinary nitrogen through their root or where the nitrogen diffused through the soil pores.  
+  i. the wetted area where the urine was applied 
+  ii. the effective area which combines the wetted area and where the grass has had access to the urinary nitrogen through their root or where the nitrogen diffused through the soil pores.  
 The grass inside the effective area of a patch is greener, darker and higher.
 These areas can be detected using RGB and NIR cameras mounted on an RPAS.
 To automate the patch detection, the K-means method was implemented in the R script. 
