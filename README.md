@@ -9,6 +9,7 @@ A urine patch is a visual delimitation between the grass that responded to an in
 The urine patch includes two elements: 
 * the wetted area where the urine was applied 
 * the effective area which combines the wetted area and where the grass has had access to the urinary nitrogen through their root or where the nitrogen diffused through the soil pores.  
+
 The grass inside the effective area of a patch is greener, darker and higher.
 These areas can be detected using RGB and NIR cameras mounted on an RPAS.
 To automate the patch detection, the K-means method was implemented in the R script. 
